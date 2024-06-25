@@ -22,7 +22,7 @@ import {
     const main = palette.neutral.main;
   
     const getUser = async () => {
-      const response = await fetch(`https://sociopedia-pied.vercel.app/users/${userId}`, {
+      const response = await fetch(`${window.location.origin}/users/${userId}`, {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       });
